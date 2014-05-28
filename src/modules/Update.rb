@@ -802,6 +802,9 @@ module Yast
     #
     def Detach
       Pkg.TargetFinish
+      Pkg.SourceReleaseAll
+      Pkg.SourceFinishAll
+
       @did_init1 = false
       @did_init2 = false
 
